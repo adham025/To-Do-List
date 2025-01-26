@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ToDoList
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.4.
@@ -57,3 +58,7 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+=======
+# To-Do-List
+A simple To-Do list app built with Angular 19. Users can add tasks via a form, with data passed to a parent wrapper. Tasks are displayed in cards, and each card has a delete button to remove tasks.
+>>>>>>> c39e643739a891f07bcc7cbc81b04c1d6cca7fb9
