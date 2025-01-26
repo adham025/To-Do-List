@@ -1,0 +1,21 @@
+<div
+  class="container d-flex flex-column justify-content-center align-items-center"
+>
+  <div class="row text-center w-100">
+    <h3 class="text-center">To Do List</h3>
+    <form class="w-100" (ngSubmit)="add()">
+      <div class="mb-3">
+        <label for="taskInput" class="form-label">Add new task</label>
+        <input
+          type="text"
+          class="form-control"
+          id="taskInput"
+          [(ngModel)]="value"
+          name="task"
+          placeholder="Enter your task"
+        />
+      </div>
+      <button type="submit" class="btn btn-primary">Add</button>
+    </form>
+  </div>
+</div>

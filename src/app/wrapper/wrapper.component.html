@@ -1,0 +1,28 @@
+<div
+  class="container d-flex flex-column justify-content-center align-items-center"
+>
+  <app-form (sendToParent)="handleChildData($event)"></app-form>
+
+  <div class="row mt-5 row-cols-md-3 g-4">
+    <div
+      *ngFor="let task of lists; let i = index;"
+      class="col-sm-12 col-md-12 mb-4 d-flex justify-content-center"
+    >
+      <app-card
+        [listItem]="task"
+        (sendToParent)="handleDeleteTask($event)"
+      ></app-card>
+    </div>
+  </div>
+</div>
+
+<!-- SHARE DATA PARENT TO CHILD -->
+<!-- PARENT HTML -> <Child [property]="value"></Child> -->
+<!-- CHILD TS -> @Input() property; -->
+
+<!-- SHARE DATA CHILD TO PARENT -->
+<!-- CHILD TS -> @Output() instanceEventEmitter = new EventEmitter<type>() -->
+<!-- CHILD TS -> this.instanceEventEmitter.emit(value) -->
+
+<!-- PARENT HTML -> <Child (instanceEventEmitter)="function($event)" -->
+<!-- PARENT TS -> function(value : type){} -->
